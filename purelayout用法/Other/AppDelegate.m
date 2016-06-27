@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "PureLayoutController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    PureLayoutController *pureVC = [[PureLayoutController alloc]init];
+    UINavigationController *navigaVC = [[UINavigationController alloc]initWithRootViewController:pureVC];
+    self.window.rootViewController = navigaVC;
+    
+    
     return YES;
 }
 

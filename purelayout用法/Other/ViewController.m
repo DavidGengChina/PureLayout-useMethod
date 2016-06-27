@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "PureLayout.h"
+
 @interface ViewController ()
 
 @end
@@ -16,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 - (void)didReceiveMemoryWarning {
